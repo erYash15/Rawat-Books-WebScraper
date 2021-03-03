@@ -17,9 +17,12 @@ def all_books_page(soup):
         'class1': 'book-row row'
         }
 
+    
+    booksUrlList = []
+    
+    
     bookList = soup.find("div", {"id": elementId['id1']})
 
-    booksUrlList = []
     
     # Extarct all links from sub column
     for book in bookList('div', {"class": elementClass['class1']}):
