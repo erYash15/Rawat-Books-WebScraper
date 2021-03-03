@@ -43,7 +43,7 @@ def changePage(site, subject):
     return GlobalbooksUrlList
 
 
-def bookUrl(site=None, subject = None):
+def bookUrl(site="https://www.rawatbooks.com", subject = None):
     return changePage(site, subject)
     
 
